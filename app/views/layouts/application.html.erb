@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PlexRails</title>
+  <title>Plex Analytics</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.png' %>
+  <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.9.3/typeahead.min.js" %>
 </head>
 <body>
 	 <div id="preloader"></div>
@@ -19,16 +21,20 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <div class="inner">
+                                <% if @altlogo %>
+                                    <%= link_to (image_tag "Plex_Company_Logo.png"), root_path, class: "logo-1" %>
+                                    <%= link_to (image_tag "Plex_Company_Logo.png"), root_path, class: "logo-2" %>
+                                <% else %>
                                     <%= link_to (image_tag "logo.png"), root_path, class: "logo-1" %>
-                                     <%= link_to (image_tag "logo-2.png"), root_path, class: "logo-2" %>
+                                    <%= link_to (image_tag "logo-2.png"), root_path, class: "logo-2" %>
+                                <% end %>
                             </div>
                         </div>
                         <!-- logo close -->
-
                     </div>
 
                     <div class="col-md-9">
-
+                        
                         <!-- mainmenu begin -->
                         <nav id="mainmenu-container">
                             <ul id="mainmenu">
@@ -44,7 +50,7 @@
                                 <li><a href="track.html">Industries</a></li>
                                 <li><%= link_to "About Plex", about_path %></li>
                                 <li><a href="track.html">Participants</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><%= link_to "Contact", contact_path %></li>
                             </ul>
                         </nav>
                         <!-- mainmenu close -->
@@ -121,7 +127,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="spacer-single"></div>
-                        &copy; Copyright 2015 - GoCargo by ExoTheme
+                        &copy; Copyright 2015 - Plex Analytics LLP
                     </div>
                 </div>
             </div>

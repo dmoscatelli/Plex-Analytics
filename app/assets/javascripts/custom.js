@@ -4,6 +4,11 @@
 jQuery(document).ready(function () {
     'use strict'; // use strict mode
 
+            if ($(window).width() < 500) {
+           $('.type-wrap').hide();
+
+        }
+
     // hide preloader
     jQuery('#preloader').delay(500).fadeOut(500);
 
@@ -509,3 +514,5 @@ jQuery(document).ready(function () {
     });
 
 });
+
+

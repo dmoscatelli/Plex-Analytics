@@ -180,6 +180,15 @@ SUBHEADER
 	background: url(/assets/bg/bg-subheader-5.jpg) top;
 	}
 
+	/* For heading on the search page -- unique styling */
+	.search {
+		padding-top: 80px;
+		background-color: #4285F4;
+
+
+
+	}
+
 	#subheader h1 {
 	color: #fff;
 	}
@@ -1172,7 +1181,30 @@ ELEMENTS
 	.btn-expand.click:before{
 	content:"\f106";
 	}
+
+
+	/* Search Related Styling
+	-------------------------------------*/
+
+	/*  for the search button; hiding the actual button per stlye preference. */
+	#search_button {
+		display: none;
+	}
+
+	#gri_search {
+		font-family: arial;
+		margin-bottom: 15px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: black;
+		font-size: 1.2em;
+
+	}
 	
+
+	.table {
+		font-family: arial;
+	}
 /* blockquote
 ------------------------------ */
 	blockquote {
@@ -4552,3 +4584,5 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 	}	
 	
 }
+
+

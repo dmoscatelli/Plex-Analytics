@@ -21,7 +21,12 @@ gem 'jquery-turbolinks'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+# For HTML template, to import icons, etc. 
 gem 'font-awesome-rails', '~> 4.5'
+# For simple form building
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+# For Elasticsearch and other search related functions
+gem 'searchkick', '~> 1.1', '>= 1.1.2'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

@@ -28,6 +28,10 @@
 //= require typed
 //= require jquery.scrollto
 //= require custom
+//= require gri_items.coffee
+
+
+
 
 
 
