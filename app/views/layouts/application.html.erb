@@ -13,6 +13,7 @@
     <div id="wrapper">
         <!-- header begin -->
         <header>
+         <div class="color-line"></div>
             <div class="container">
                 <span id="menu-btn"></span>
                 <div class="row">
@@ -22,11 +23,11 @@
                         <div id="logo">
                             <div class="inner">
                                 <% if @altlogo %>
-                                    <%= link_to (image_tag "Plex_Company_Logo.png"), root_path, class: "logo-1" %>
+                                    <%= link_to (image_tag "Plex_Company_White.png"), root_path, class: "logo-1" %>
                                     <%= link_to (image_tag "Plex_Company_Logo.png"), root_path, class: "logo-2" %>
                                 <% else %>
-                                    <%= link_to (image_tag "logo.png"), root_path, class: "logo-1" %>
-                                    <%= link_to (image_tag "logo-2.png"), root_path, class: "logo-2" %>
+                                    <%= link_to (image_tag "PlexLogo_Analytics.png"), root_path, class: "logo-1" %>
+                                    <%= link_to (image_tag "PlexLogo_Analytics_Full.png"), root_path, class: "logo-2" %>
                                 <% end %>
                             </div>
                         </div>
@@ -41,27 +42,30 @@
                                 <li><%= link_to "Services", services_path %>
                                     <ul>
                                         <li><a href="services.html">All Services</a></li>
-                                        <li><a href="service-details-1.html">Data Analytics</a></li>
-                                        <li><a href="service-details-2.html">Profitability Analytics</a></li>
-                                        <li><a href="service-details-3.html">Sustainability Reporting</a></li>
-                                        <li><a href="service-details-4.html">Research</a></li>
+                                        <li><%= link_to "Data Analytics", data_analytics_path %></a></li>
+                                        <li><%= link_to "Profitability", profitability_path %></li>
+                                        <li><%= link_to "Sustainability Analytics", sustainability_path %></li>
+                                        <li><%= link_to "Research", research_path %></li>
                                     </ul>
                                 </li>
-                                <li><a href="track.html">Industries</a></li>
+                                <li><%= link_to "Industries", industries_path %></li>
                                 <li><%= link_to "About Plex", about_path %></li>
                                 <li><a href="track.html">Participants</a></li>
                                 <li><%= link_to "Contact", contact_path %></li>
+                                <li><%= link_to "Login", root_path %></li>
                             </ul>
+
                         </nav>
                         <!-- mainmenu close -->
 
                         <!-- social icons -->
                         <div class="social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <!--<%= link_to "Sign in", "#", class: "btn-custom-log" %>-->
+                            <!--<a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-rss"></i></a>
                             <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-envelope-o"></i></a>
+                            <a href="#"><i class="fa fa-envelope-o"></i></a>-->
                         </div>
                         <!-- social icons close -->
 

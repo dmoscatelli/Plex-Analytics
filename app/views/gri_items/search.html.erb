@@ -4,9 +4,7 @@
         </section>
 <!-- subheader close -->
 
-
-
-
+<!-- content begin -->
 <div id="content">
 	<div class="container">
 		<h4>Search GRI Items using the Plex Search Interface</h4>
@@ -15,14 +13,15 @@
 		<p><%= link_to "Sign up", root_path %> to get started</p>
 		<br>
 
+		<!-- Begin search field here -->
 
 			<%= form_tag search_gri_items_path, method: :get, role: "search" do %>
-			<%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search GRI Items"%>
-			<%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>
+				<%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search GRI Items", :autofocus => true %>
+				<%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>
 			<% end %>		 
+			<br>
+		<!-- End search field -->
 
-
-		<br>
  				<div class="col-md-3">
  					<div class="widget">
                             <ul class="side-nav">
@@ -35,7 +34,9 @@
                         </div>
                       </div>
 
-		<div class="col-md-8">
+        <!-- Begin index loop -->              
+
+		<div class="col-md-9">
 			<table class="table">
 				<% @gri_items.each do |gri| %>
 				<tr>
@@ -45,6 +46,9 @@
 				</tr>
 				<% end %>
 			</table>
+
+		<!-- End index loop -->
+
 		</div>
 	</div>
 </div>

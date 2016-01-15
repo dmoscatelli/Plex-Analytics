@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+﻿	@charset "utf-8";
 
 
 /* made by exotheme
@@ -36,12 +36,12 @@ misc
 BODY
 ------------------------------ */
 	body {
-	font-family: "Lato", Arial, Helvetica, sans-serif;
+	font-family: "Arial", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 1.7em;
 	margin: 0;
 	padding: 0;
-	color: #888;
+	color: black;
 	background: #fff;
 	text-shadow: none !important;
 	}
@@ -109,13 +109,13 @@ HEADER
 
 
 	header .social a {
-	color: #D03232;
+	color: #4285F4;
 	font-size: 18px;
 	padding: 0 8px 0 8px;
 	}
 
 	header .social a:hover {
-	color: #D03232;
+	color: #4285F4;
 	}
 
 	header .animated {
@@ -195,7 +195,7 @@ SUBHEADER
 
 	#subheader h1 span {
 	display: block;
-	font-family: "Georgia";
+	font-family: "Arial";
 	font-style: italic;
 	text-transform: none;
 	font-size: 18px;
@@ -214,7 +214,7 @@ SUBHEADER
 MAINMENU
 ------------------------------ */
 	#mainmenu-container {
-	font-family: "Montserrat";
+	font-family: "Arial";
 	text-align: center;
 	height: 60px;
 	margin-top: 20px;
@@ -279,7 +279,7 @@ MAINMENU
 	}
 
 	#mainmenu li:hover a {
-	color: #D03232;
+	color: #4285F4;
 	}
 
 	#mainmenu li:hover li a {
@@ -308,7 +308,7 @@ MAINMENU
 
 	#mainmenu li li a:hover {
 	color: #fff;
-	background: #D03232;
+	background: #4285F4;
 	}
 
 	#mainmenu li ul {
@@ -460,7 +460,7 @@ MAINMENU
 
 	.blog-list li:hover {
 	background: #eee;
-	border-color: #D03232;
+	border-color: #4285F4;
 	}
 
 	.blog-list .info {
@@ -1024,7 +1024,7 @@ ELEMENTS
 	}
 
 	.btn-custom {
-	background: #D03232;
+	background: #4285F4;
 	color: #fff;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -1036,6 +1036,7 @@ ELEMENTS
 	letter-spacing: 2px;
 	display: inline-block;
 	}
+
 
 	#main-button {
 		margin: 10px;
@@ -1055,6 +1056,23 @@ ELEMENTS
 	.btn-custom-2 {
 	background: #57647e;
 	color: #fff;
+	}
+
+	.btn-custom-log {
+	background: #4285F4;
+	color: white !important; 
+	text-decoration: none;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 2px;
+	font-size: 1.1em !important;
+	padding: 10px 15px 10px 15px !important;
+
+	}
+
+	.btn-custom-log:hover { 
+		text-decoration: none;
+		background-color: #62CB31;
 	}
 
 	a.btn:hover {
@@ -1234,7 +1252,7 @@ ELEMENTS
 	}
 
 	blockquote span {
-	font-family: "Open Sans", Arial;
+	font-family: "Arial", Arial;
 	display: block;
 	}
 
@@ -1257,7 +1275,7 @@ ELEMENTS
 ------------------------------ */
 	.crumb {
 	display: block;
-	font-family:"Georgia";
+	font-family:"Arial";
 	font-size: 14px;
 	font-style:italic;
 	color:#fff;
@@ -1404,7 +1422,6 @@ ELEMENTS
 	.f_box span {
 	display: block;
 	font-size: 12px;
-	text-transform: uppercase;
 	font-weight: normal;
 	margin-top: 10px;
 	}
@@ -1531,7 +1548,7 @@ ELEMENTS
     height: auto;
     padding: 15px;
     float: left;
-    font-family: "Lato";
+    font-family: "Arial";
 	}
 
 	.cta-form input[type=text] {
@@ -1556,14 +1573,14 @@ ELEMENTS
 	h1, h2 {
 	font-weight: 500;
 	color: #333;
-	font-family: "Montserrat";
+	font-family: "Arial";
 	}
 
 	h3, h4, h5, h6 {
 	font-weight: lighter;
 	;
 	color: #333;
-	font-family: "Montserrat";
+	font-family: "Arial";
 	}
 
 	footer h3, footerh4, footerh5, footer h6 {
@@ -1581,7 +1598,6 @@ ELEMENTS
 	margin: 0;
 	margin-bottom: 20px;
 	letter-spacing: -1px;
-	text-transform: uppercase;
 	}
 
 	h3.title {
@@ -1592,7 +1608,6 @@ ELEMENTS
 
 	h2 {
 	font-size: 26px;
-	text-transform: uppercase;
 	margin-top: 0;
 	}
 
@@ -1603,7 +1618,7 @@ ELEMENTS
 
 	h2 span {
 	display: block;
-	font-family: "Georgia";
+	font-family: "Arial";
 	font-style: italic;
 	text-transform: none;
 	font-size: 18px;
@@ -2068,7 +2083,6 @@ ELEMENTS
 
 	.timeline-body > .location{
 	display:block;
-	text-transform:uppercase;
 	color:#555;
 	}
 
@@ -2105,7 +2119,6 @@ ELEMENTS
 
 	ul.progress li {
 		background-color: #555;
-		text-transform:uppercase;
 		font-size:11px;
 	}
 
@@ -2178,8 +2191,6 @@ ELEMENTS
 
 	.widget h3 {
 	margin: 0;
-	padding-bottom: 10px;
-	text-transform: uppercase;
 	font-size: 18px;
 	}
 
@@ -2587,11 +2598,10 @@ text-align: left;
 
 .title-area h1 {
 color: #fff;
-font-family: "Montserrat", Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 font-size: 40px;
 font-weight: 500;
 letter-spacing: 5px;
-text-transform: uppercase;
 margin: 0;
 }
 
@@ -2599,7 +2609,6 @@ margin: 0;
 font-size: 15px;
 color: #fff;
 letter-spacing: 3px;
-text-transform: uppercase;
 font-weight: 300;
 }
 
@@ -2656,12 +2665,11 @@ padding: 0;
 
 .item .overlay .time {
 letter-spacing: 1px;
-text-transform: uppercase;
 }
 
 
 /*------------------------------ 
-/* link
+/* link and Login 
 /*------------------------------ */
 a {
 color: #D03232;
@@ -2675,6 +2683,16 @@ color: #222;
 
 footer a:hover {
 color: #fff;
+}
+
+#login_link {
+color: #4285F4;
+text-decoration: none;
+outline: none;
+}
+
+#login_link:hover {
+color: #222;
 }
 
 /*------------------------------ 
@@ -2794,7 +2812,6 @@ padding: 20px 30px 20px 30px;
 
 .custom-col-2 .overlay h3 {
 font-weight: bold;
-text-transform: uppercase;
 letter-spacing: 1px;
 font-size: 18px;
 margin: 0;
@@ -2804,7 +2821,6 @@ color: #fff;
 
 .custom-col-2 .overlay .by {
 letter-spacing: 2px;
-text-transform: uppercase;
 color: #fff;
 }
 
@@ -2898,7 +2914,7 @@ display:block;
 
 .single-carousel-arrow-nav .name{
 margin-top:10px;
-font-family:"Georgia";
+font-family:"Arial";
 font-style:italic;
 color:#333;
 }
@@ -3108,8 +3124,10 @@ background: url(/assets/bg_full_3.jpg) center fixed;
 }
 
 #bg-service-1 {
-background: url(/assets/bg/bg_service_1.jpg) top center #565f68;
+/*background: url(/assets/bg/bg_service_1.jpg) top center #565f68; */
 background-size: cover;
+background-color: #34495E;
+
 }
 
 #section-features {
@@ -3117,13 +3135,15 @@ background-size: cover;
 }
 
 #bg-service-2 {
-background: url(/assets/bg/bg_service_2.jpg) top center #236b94;
+/*background: url(/assets/bg/bg_service_2.jpg) top center #236b94; */
 background-size: cover;
+background-color: #4285F4;
 }
 
 #bg-service-3 {
-background: url(/assets/bg/bg_service_3.jpg) top center #bf3f3f;
+/*background: url(/assets/bg/bg_service_3.jpg) top center #3B97D3;*/
 background-size: cover;
+background-color: #62CB31;
 }
 
 #bg-service-4 {
@@ -3213,7 +3233,7 @@ background: url(/assets/bg/bg_2.jpg) #303a43; background-size:cover;
 }
 
 .sub-intro-text{
-font-family:Georgia;
+font-family: "Arial";
 font-size:18px;
 font-style:italic;
 }
@@ -3249,14 +3269,13 @@ font-style:italic;
 .carousel-text h1{
 font-size:56px;
 font-weight:800;
-text-transform:uppercase;
 line-height:56px;
 font-weight:normal;
 color:#fff;
 }
 
 .custom-font-3{
-font-family:Georgia;
+font-family: "Arial";
 font-size:18px;
 font-style:italic;
 }
@@ -3694,7 +3713,6 @@ letter-spacing: 2px;
 padding: 5px 10px 5px 10px;
 margin: 0 auto;
 margin-top: 20px;
-text-transform: uppercase;
 font-weight: 800;
 color: #fff;
 }
@@ -3769,7 +3787,7 @@ width: 100%;
 height: 100%;
 position: absolute;
 z-index: 10;
-font-family: "Open Sans";
+font-family: "Arial";
 top: 30%;
 }
 
@@ -3966,9 +3984,10 @@ color:#888;
 border:solid 1px #f2f2f2;
 }
 
+
 .typed-strings p{position:absolute;}
 
-.type-wrap.title.big {font-size:60px !important; font-weight:600; color:#fff;}
+.type-wrap.title.big {font-size:60px !important; font-weight:600; color:#fff; text-transform: uppercase;}
 
 .side-nav li{
 border-bottom:solid 1px #f2f2f2;
@@ -3980,7 +3999,7 @@ color:#333;
 }
 
 .side-nav li.active{
-background:#333;
+background:#4285F4;
 }
 
 .side-nav li.active a{
@@ -4277,6 +4296,11 @@ height: 100%;
 background: url(/assets/loader.gif) center no-repeat #fff;
 }
 
+@media (min-width: 1199px) {
+		
+}
+
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	header {
@@ -4294,6 +4318,7 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 	header .col-md-9 {
 	text-align: right;
 	}
+
 
 	#mainmenu-container {
 	display: inline-block;
@@ -4585,4 +4610,19 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 	
 }
 
+.color-line {
+    background: #f7f9fa;
+    height: 6px;
+    background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #4285F4 25%, #4285F4 35%, #4285F4 35%, #4285F4 45%, #62cb31 45%, #62cb31 55%, #62cb31 55%, #62cb31 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-size: 100% 6px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+ }
+
+
+.products {
+	display: inline-block;
+	margin-left: 0px;
+	padding-left: 15px;	
+}
 
