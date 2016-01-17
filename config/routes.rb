@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
    	root 'pages#index'
 
-
+   get '/start', :to => 'pages#start'
    get '/dashboard', :to => 'pages#dashboard'
    get '/culture', :to => 'pages#culture'
    get '/careers', :to => 'pages#careers'

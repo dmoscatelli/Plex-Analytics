@@ -5,6 +5,11 @@ class PagesController < ApplicationController
 		@color = true
 	end 
 
+	def index2
+		@altlogo = false
+		@color = true
+	end 
+
 	def services
 	end
 
@@ -54,6 +59,10 @@ class PagesController < ApplicationController
 	end 
 
 	def participants
+	end 
+
+
+	def start
 	end 
 
 

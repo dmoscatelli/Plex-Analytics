@@ -13,21 +13,23 @@
     <div id="wrapper">
         <!-- header begin -->
         <header>
-         <div class="color-line"></div>
-            <div class="container">
-                <span id="menu-btn"></span>
-                <div class="row">
-                    <div class="col-md-3">
+            <% if !@color %>
+                   <div class="color-line"></div>
+            <% end %>
+                <div class="container">
+                    <span id="menu-btn"></span>
+                    <div class="row">
+                        <div class="col-md-3">
 
                         <!-- logo begin -->
                         <div id="logo">
                             <div class="inner">
                                 <% if @altlogo %>
-                                    <%= link_to (image_tag "Plex_Company_White.png"), root_path, class: "logo-1" %>
+                                    <%= link_to (image_tag "plex_Company_White.png"), root_path, class: "logo-1" %>
                                     <%= link_to (image_tag "Plex_Company_Logo.png"), root_path, class: "logo-2" %>
                                 <% else %>
-                                    <%= link_to (image_tag "PlexLogo_Analytics.png"), root_path, class: "logo-1" %>
-                                    <%= link_to (image_tag "PlexLogo_Analytics_Full.png"), root_path, class: "logo-2" %>
+                                    <%= link_to (image_tag "plex_white_strip.png"), root_path, class: "logo-1" %>
+                                    <%= link_to (image_tag "plex_blue_line.png"), root_path, class: "logo-2" %>
                                 <% end %>
                             </div>
                         </div>
@@ -52,15 +54,14 @@
                                 <li><%= link_to "About Plex", about_path %></li>
                                 <li><a href="track.html">Participants</a></li>
                                 <li><%= link_to "Contact", contact_path %></li>
-                                <li><%= link_to "Login", root_path %></li>
+                                <li class="signin"><%= link_to "Sign in", root_path %></li>
                             </ul>
-
                         </nav>
                         <!-- mainmenu close -->
 
                         <!-- social icons -->
                         <div class="social">
-                            <!--<%= link_to "Sign in", "#", class: "btn-custom-log" %>-->
+                            <%= link_to "Sign in", "#", class: "btn-custom-log" %>
                             <!--<a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-rss"></i></a>
@@ -68,61 +69,23 @@
                             <a href="#"><i class="fa fa-envelope-o"></i></a>-->
                         </div>
                         <!-- social icons close -->
-
+                    </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- header close -->
+        <!-- header close -->   
 
 <%= yield %>
 
-
-<!-- footer begin -->
+        <!-- footer begin -->
         <footer>
             <div class="container">
                 <div class="row">
-
-
-
                     <div class="col-md-4">
-                        <h3>Our Services</h3>
-                        <div class="tiny-border"></div>
                         <ul>
-                            <li><a href="#">Ocean Freight</a></li>
-                            <li><a href="#">Sky Freight</a></li>
-                            <li><a href="#">Cargo Express</a></li>
-                            <li><a href="#">Logistics</a></li>
-                            <li><a href="#">Warehousing</a></li>
-                            <li><a href="#">Custom Brokerage</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-md-4">
-                        <h3>Location</h3>
-                        <div class="tiny-border"></div>
-                        Somewhere Over Rainbow<br>
-                        Green World Rainbow Green World<br>
-                        T. 0908 1000 1000<br>
-                        E. contact@exotheme.com<br>
-
-                        <div class="divider-single"></div>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-rss"></i></a>
-                            <a href="#"><i class="fa fa-envelope-o"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h3>Buy Now</h3>
-                        <div class="tiny-border"></div>
-                        <p>Multi-modal container units, designed as reusable carriers to facilitate unit load handling of the goods contained, are also referred to as cargo, specially by shipping lines and logistics operators.</p>
-                        <a href="#" class="btn-border-light">Buy Now</a>
-                    </div>
-
                 </div>
             </div>
             <div class="divider"></div>
@@ -131,7 +94,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="spacer-single"></div>
-                        &copy; Copyright 2015 - Plex Analytics LLP
+                        &copy; Copyright 2015 - Plex Analytics Limited
                     </div>
                 </div>
             </div>

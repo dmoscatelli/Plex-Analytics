@@ -58,6 +58,7 @@ HEADER
 	width: 100%;
 	z-index: 100;
 	height: 80px;
+	background-color: #4285F4;
 	}
 
 	header.overlay{
@@ -180,6 +181,13 @@ SUBHEADER
 	background: url(/assets/bg/bg-subheader-5.jpg) top;
 	}
 
+	.careers {
+	padding-top: 120px;
+	background-color: white;
+	background-size: cover !important;
+	text-align: center;
+	}
+
 	/* For heading on the search page -- unique styling */
 	.search {
 		padding-top: 80px;
@@ -300,6 +308,8 @@ MAINMENU
 	border-top: none;
 	text-transform: none;
 	letter-spacing: normal;
+	position: static;
+	width: 100%;
 	}
 
 	#mainmenu li li a:hover {
@@ -385,8 +395,8 @@ MAINMENU
 /* FOOTER
 /*------------------------------ */
 	footer {
-	background: #101314;
-	color: #ccc;
+	background: #F1F1F1;
+	color: #6C6C6C;
 	padding: 40px 0 40px 0;
 	}
 
@@ -3987,7 +3997,35 @@ border:solid 1px #f2f2f2;
 
 .typed-strings p{position:absolute;}
 
-.type-wrap.title.big {font-size:60px !important; font-weight:600; color:#fff; text-transform: uppercase;}
+.type-wrap.title.big {font-size:60px !important; font-weight:600; color:#fff; font-family: 'Open Sans'}
+
+
+/* For the careers page typed strings */
+
+.type-wrap.title-careers {font-size:27px !important; font-weight:600; color:#272A32; font-family: 'Open Sans'}
+
+
+.box-type {
+	border: 1px solid #4285F4;
+	padding: 12px;
+	width: 70%;
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+	border-radius: 0.2px; 
+	-moz-border-radius: 0.2px; 
+	-webkit-border-radius: 0.2px;
+}
+
+#careers-type {
+	color: black;
+}
+
+
+
+ #scale, #sustain  {
+	color: #4285F4;
+}
 
 .side-nav li{
 border-bottom:solid 1px #f2f2f2;
@@ -4293,11 +4331,12 @@ position: absolute;
 z-index: 100001;
 width: 100%;
 height: 100%;
+/* replaced the loader with blue box gif */
 background: url(/assets/loader.gif) center no-repeat #fff;
 }
 
-@media (min-width: 1199px) {
-		
+.signin {
+	display: none !important;
 }
 
 
@@ -4310,9 +4349,18 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 	header.clone {
 	display: block;
 	position: inherit;
+	background-color: #4285F4;
+	border-bottom: 0px;
 	margin: 0;
 	padding: 0;
 	margin-top: 0;
+	}
+
+
+
+	/* To display the signin link with collapsed menu */
+	.signin {
+		display: inline-block !important;
 	}
 
 	header .col-md-9 {
@@ -4334,6 +4382,8 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 
 
 @media (max-width: 992px) {
+
+
 	#slider .slider-info {
 	display: none;
 	}
@@ -4352,6 +4402,10 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 
 	header {
 	display: none;
+	}
+
+	.signin {
+		display: inline-block !important;
 	}
 
 	header.clone {
@@ -4596,7 +4650,7 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 	{display:none;}
 	
 	
-	#subheader .overlay{background:none;}
+	#subheader .overlay{background-color:none;}
 	
 	.cta-form input[type=text] {
 		width: 60%;
@@ -4615,7 +4669,7 @@ background: url(/assets/loader.gif) center no-repeat #fff;
     height: 6px;
     background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #4285F4 25%, #4285F4 35%, #4285F4 35%, #4285F4 45%, #62cb31 45%, #62cb31 55%, #62cb31 55%, #62cb31 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
 	background-size: 100% 6px;
-    background-position: 50% 100%;
+    background-position: 50% 100%;	
     background-repeat: no-repeat;
  }
 
@@ -4625,4 +4679,54 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 	margin-left: 0px;
 	padding-left: 15px;	
 }
+
+.callout-text {
+	text-align: center;
+}
+
+/* -----START Dropdown Apps menu  */
+
+.dropdown-menu.hdropdown {
+  padding: 0;
+  z-index: 1060;
+}
+.dropdown-menu.hdropdown .title {
+  padding: 12px 12px;
+  text-align: center;
+  border-bottom: 1px solid #e4e5e7;
+}
+.dropdown-menu.hdropdown li {
+  padding: 6px 12px;
+  text-align: left;
+  background: #fafbfc;
+  border-bottom: 1px solid #e4e5e7;
+}
+.dropdown-menu.filedropdown li {
+  padding: 6px 6px;
+  text-align: left;
+  background: #fafbfc;
+  border-bottom: 1px solid #e4e5e7;
+}
+.dropdown-menu.filedropdown li i {
+  margin-right: 10px;
+
+  .dropdown-menu {
+  font-size: 13px;
+  border-radius: 3px;
+}
+.dropdown-example {
+  display: inline-block;
+  margin: 0px 10px 10px 10px;
+}
+.dropdown-example .dropdown-menu {
+  position: static;
+  display: block;
+}
+.pagination-example .pagination {
+  margin: 0 0 10px 0;
+}
+
+/*------ END Dropdown Apps menu*/
+
+
 

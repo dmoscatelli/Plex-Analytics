@@ -12,6 +12,9 @@ Rails.application.config.assets.precompile += %w( s2.png )
 Rails.application.config.assets.precompile += %w( plexproduct.png )
 Rails.application.config.assets.precompile += %w( plextalent.png )
 Rails.application.config.assets.precompile += %w( dashboard.png )
+Rails.application.config.assets.precompile += %w( plex_white_strip.png )
+Rails.application.config.assets.precompile += %w( plex_blue_line.png )
+
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
