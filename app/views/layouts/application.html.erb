@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.png' %>
   <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.9.3/typeahead.min.js" %>
+
 </head>
 <body>
 	 <div id="preloader"></div>
@@ -19,22 +20,7 @@
                 <div class="container">
                     <span id="menu-btn"></span>
                     <div class="row">
-                        <div class="col-md-3">
-
-                        <!-- logo begin -->
-                        <div id="logo">
-                            <div class="inner">
-                                <% if @altlogo %>
-                                    <%= link_to (image_tag "plex_Company_White.png"), root_path, class: "logo-1" %>
-                                    <%= link_to (image_tag "Plex_Company_Logo.png"), root_path, class: "logo-2" %>
-                                <% else %>
-                                    <%= link_to (image_tag "plex_white_strip.png"), root_path, class: "logo-1" %>
-                                    <%= link_to (image_tag "plex_blue_line.png"), root_path, class: "logo-2" %>
-                                <% end %>
-                            </div>
-                        </div>
-                        <!-- logo close -->
-                    </div>
+                  
 
                     <div class="col-md-9">
                         
@@ -43,7 +29,6 @@
                             <ul id="mainmenu">
                                 <li><%= link_to "Services", services_path %>
                                     <ul>
-                                        <li><a href="services.html">All Services</a></li>
                                         <li><%= link_to "Data Analytics", data_analytics_path %></a></li>
                                         <li><%= link_to "Profitability", profitability_path %></li>
                                         <li><%= link_to "Sustainability Analytics", sustainability_path %></li>
@@ -55,25 +40,44 @@
                                 <li><a href="track.html">Participants</a></li>
                                 <li><%= link_to "Contact", contact_path %></li>
                                 <li class="signin"><%= link_to "Sign in", root_path %></li>
-                            </ul>
+                            </ul>  
                         </nav>
                         <!-- mainmenu close -->
 
                         <!-- social icons -->
                         <div class="social">
+
                             <%= link_to "Sign in", "#", class: "btn-custom-log" %>
-                            <!--<a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                           
+                            <!--<a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-rss"></i></a>
                             <a href="#"><i class="fa fa-google-plus"></i></a>
                             <a href="#"><i class="fa fa-envelope-o"></i></a>-->
                         </div>
-                        <!-- social icons close -->
-                    </div>
                     </div>
                 </div>
             </div>
-        </header>
+
+
+
+               <!--<ul>
+        <li><%= link_to (image_tag "plextalent.png", class: "talent-app"), gri_items_path %></li>
+        <li id="app-name"><%= link_to "GRI Index", gri_items_path %></li>
+        </ul>
+        <ul>
+        <div class="app-box">
+        <li><%= image_tag "plexproduct.png", class: "main-app" %></li> 
+        <li id="app-name">Dashboard</li>
+        </div>
+        </ul>
+        <ul>
+        <li><%= image_tag "plextalent_app.png", class: "main-app" %></li> 
+        <li id="app-name">Talent</li>
+        </ul>-->
+        </div>
+    </header>
+
+       
         <!-- header close -->   
 
 <%= yield %>

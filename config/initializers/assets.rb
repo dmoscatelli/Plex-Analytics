@@ -14,6 +14,12 @@ Rails.application.config.assets.precompile += %w( plextalent.png )
 Rails.application.config.assets.precompile += %w( dashboard.png )
 Rails.application.config.assets.precompile += %w( plex_white_strip.png )
 Rails.application.config.assets.precompile += %w( plex_blue_line.png )
+Rails.application.config.assets.precompile += %w( Plex_Block.png )
+Rails.application.config.assets.precompile += %w( plextalent_app.png )
+Rails.application.config.assets.precompile += %w( hero-icons.png )
+Rails.application.config.assets.precompile += %w( collaboration.png )
+Rails.application.config.assets.precompile += %w( goplex_color.png )
+
 
 
 # Add additional assets to the asset load path

@@ -6,8 +6,73 @@ jQuery(document).ready(function () {
 
             if ($(window).width() < 500) {
            $('.type-wrap').hide();
+        };
 
-        }
+
+        // ---START for apps show and hide functions
+
+    
+            var over = false;
+            $('.apps').hover(function() {
+              over = true;
+            },
+            function () {
+              over = false;
+            });
+
+          $('.app-show').click( function(event){
+                event.stopPropagation();
+            $('.apps').toggle();
+            });
+
+            $(document).click( function(){
+               if (!over) { 
+                $('.apps').hide();
+                }
+            });
+        
+ 
+       
+        // --END for apps show and hide functions
+
+        
+        $(".mysmile").smilify();
+
+
+
+             
+   
+        //for search change color -- BEGIN HERE
+        $('#gri_search').keypress(function() {
+
+                 $('#gri_search').css({'background-color' : '#4285F4'});
+                 $('#gri_search').css({'color' : '#FFFFFF'});
+                 $('#gri_search').attr('placeholder', '');
+            });
+
+
+           
+            $('#gri_search').focus(
+            function(){
+                $(this).css({'background-color' : '#5D5D5D'});
+
+            });
+
+
+            $('#gri_search').blur(
+            function(){
+                $(this).css({'background-color' : '#5D5D5D'});
+                 $('#gri_search').attr('placeholder', 'Search GRI Items');
+
+            });
+            // Search change color END
+
+            //For hiding sidebar BEGIN
+          
+
+            
+            //For hiding sidebar END
+
 
     // hide preloader
     jQuery('#preloader').delay(500).fadeOut(500);
@@ -514,5 +579,9 @@ jQuery(document).ready(function () {
     });
 
 });
+
+
+
+
 
 

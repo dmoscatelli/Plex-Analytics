@@ -1,4 +1,11 @@
-﻿	@charset "utf-8";
+﻿@import url(https://fonts.googleapis.com/css?family=Righteous:400);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+
+
+	@charset "utf-8";
+
 
 
 /* made by exotheme
@@ -36,13 +43,13 @@ misc
 BODY
 ------------------------------ */
 	body {
-	font-family: "Arial", Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 1.7em;
 	margin: 0;
 	padding: 0;
 	color: black;
-	background: #fff;
+	background: #3B3B3B;
 	text-shadow: none !important;
 	}
 
@@ -58,7 +65,7 @@ HEADER
 	width: 100%;
 	z-index: 100;
 	height: 80px;
-	background-color: #4285F4;
+	background-color: #3B3B3B;
 	}
 
 	header.overlay{
@@ -76,7 +83,7 @@ HEADER
 	top: -180px;
 	transition: 0.5s top ease-in;
 	margin-left: 0;
-	border-bottom: solid 1px #eee;
+	border-bottom: solid 1px #ffffff;
 	margin-top: 0;
 	background: #fff;
 	}
@@ -110,8 +117,8 @@ HEADER
 
 
 	header .social a {
-	color: #4285F4;
-	font-size: 18px;
+	color: white;
+	font-size: 16px;
 	padding: 0 8px 0 8px;
 	}
 
@@ -203,7 +210,7 @@ SUBHEADER
 
 	#subheader h1 span {
 	display: block;
-	font-family: "Arial";
+	font-family: 'Open Sans';
 	font-style: italic;
 	text-transform: none;
 	font-size: 18px;
@@ -222,12 +229,11 @@ SUBHEADER
 MAINMENU
 ------------------------------ */
 	#mainmenu-container {
-	font-family: "Arial";
+	font-family: 'Open Sans';
 	text-align: center;
 	height: 60px;
 	margin-top: 20px;
 	display: inline-block;
-	font-weight: bold;
 	}
 
 	.menu-right{
@@ -236,9 +242,10 @@ MAINMENU
 
 	#mainmenu {
 	color: #D03232;
-	font-size: 13px;
+	font-size: 16px;
 	display: inline-block;
 	text-align: left;
+	font-weight: 300;
 	}
 
 	#mainmenu a {
@@ -397,7 +404,7 @@ MAINMENU
 	footer {
 	background: #F1F1F1;
 	color: #6C6C6C;
-	padding: 40px 0 40px 0;
+	padding: 10px 0 10px 0;
 	}
 
 	footer a {
@@ -1220,15 +1227,16 @@ ELEMENTS
 	}
 
 	#gri_search {
-		font-family: arial;
+		font-family: 'Open Sans';
 		margin-bottom: 15px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		color: black;
+		padding-top: 23px;
+		padding-bottom: 23px;
+		color: white;
 		font-size: 1.2em;
+		background-color : #5D5D5D; 
+		border: none;	
+	}	
 
-	}
-	
 
 	.table {
 		font-family: arial;
@@ -1262,7 +1270,7 @@ ELEMENTS
 	}
 
 	blockquote span {
-	font-family: "Arial", Arial;
+	font-family: 'Open Sans', Arial;
 	display: block;
 	}
 
@@ -1285,7 +1293,7 @@ ELEMENTS
 ------------------------------ */
 	.crumb {
 	display: block;
-	font-family:"Arial";
+	font-family:'Open Sans';
 	font-size: 14px;
 	font-style:italic;
 	color:#fff;
@@ -1558,7 +1566,7 @@ ELEMENTS
     height: auto;
     padding: 15px;
     float: left;
-    font-family: "Arial";
+    font-family: 'Open Sans';
 	}
 
 	.cta-form input[type=text] {
@@ -1583,14 +1591,14 @@ ELEMENTS
 	h1, h2 {
 	font-weight: 500;
 	color: #333;
-	font-family: "Arial";
+	font-family: 'Open Sans';
 	}
 
 	h3, h4, h5, h6 {
 	font-weight: lighter;
 	;
 	color: #333;
-	font-family: "Arial";
+	font-family: 'Open Sans';
 	}
 
 	footer h3, footerh4, footerh5, footer h6 {
@@ -1628,7 +1636,7 @@ ELEMENTS
 
 	h2 span {
 	display: block;
-	font-family: "Arial";
+	font-family: 'Open Sans';
 	font-style: italic;
 	text-transform: none;
 	font-size: 18px;
@@ -2924,7 +2932,7 @@ display:block;
 
 .single-carousel-arrow-nav .name{
 margin-top:10px;
-font-family:"Arial";
+font-family:'Open Sans';
 font-style:italic;
 color:#333;
 }
@@ -3239,11 +3247,13 @@ background: url(/assets/bg/bg_2.jpg) #303a43; background-size:cover;
 }
 
 #section-intro-2{
-background: url(/assets/bg/bg_2.jpg) #303a43; background-size:cover;
+background: url() #3B3B3B; background-size:cover; 
+margin-top: 0px !important;
+padding-top: 0px;
 }
 
 .sub-intro-text{
-font-family: "Arial";
+font-family: 'Open Sans';
 font-size:18px;
 font-style:italic;
 }
@@ -3285,7 +3295,7 @@ color:#fff;
 }
 
 .custom-font-3{
-font-family: "Arial";
+font-family: 'Open Sans';
 font-size:18px;
 font-style:italic;
 }
@@ -3797,7 +3807,7 @@ width: 100%;
 height: 100%;
 position: absolute;
 z-index: 10;
-font-family: "Arial";
+font-family: 'Open Sans';
 top: 30%;
 }
 
@@ -3997,7 +4007,7 @@ border:solid 1px #f2f2f2;
 
 .typed-strings p{position:absolute;}
 
-.type-wrap.title.big {font-size:60px !important; font-weight:600; color:#fff; font-family: 'Open Sans'}
+.type-wrap.title.big {font-size:32px !important; margin-left: 14px; font-weight:300; color:white; font-family: 'Open Sans'}
 
 
 /* For the careers page typed strings */
@@ -4340,330 +4350,6 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 }
 
 
-
-@media (min-width: 992px) and (max-width: 1199px) {
-	header {
-	display: none;
-	}
-
-	header.clone {
-	display: block;
-	position: inherit;
-	background-color: #4285F4;
-	border-bottom: 0px;
-	margin: 0;
-	padding: 0;
-	margin-top: 0;
-	}
-
-
-
-	/* To display the signin link with collapsed menu */
-	.signin {
-		display: inline-block !important;
-	}
-
-	header .col-md-9 {
-	text-align: right;
-	}
-
-
-	#mainmenu-container {
-	display: inline-block;
-	text-align: right;
-	margin-right: 20px;
-	}
-	
-	header .social{display:none;}
-	
-	#subheader .overlay{background:none;}
-	
-}
-
-
-@media (max-width: 992px) {
-
-
-	#slider .slider-info {
-	display: none;
-	}
-
-	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-	margin-bottom: 30px;
-	}
-
-	.box-one-third {
-	width: 100%;
-	}
-	
-	#gallery .item{
-	width:100%;
-	}
-
-	header {
-	display: none;
-	}
-
-	.signin {
-		display: inline-block !important;
-	}
-
-	header.clone {
-	display: block;
-	position: inherit;
-	margin: 0;
-	padding: 0;
-	margin-top: 0;
-	}
-
-	header.clone #logo {
-	display: block;
-	}
-
-	header.clone #logo a{
-	text-align:center;
-	}
-
-	header.clone #logo .logo-2{
-	 display:inline-block !important;
-	}
-	
-	header.clone #logo img{
-		max-height:60px;
-		width:auto;
-	}
-
-	#subheader {
-	padding: 40px 0 40px 0;
-	}
-
-	#logo {
-	margin: 0 auto;
-	text-align: center;
-	}
-
-	#logo .inner {
-	margin: 20px 0 20px 0;
-	}
-
-	#booking input, #booking select {
-	width: 100%;
-	margin-bottom: 10px;
-	}
-
-
-	.selectnav {
-	display: block;
-	margin: 0 auto;
-	margin-top: 40px;
-	margin-bottom: 20px;
-	}
-
-	#mainmenu-container {
-	display: block;
-	}
-
-	header .buttons {
-	width: 100%;
-	display: block;
-	text-align: center;
-	float: none;
-	margin-top: 0px;
-	}
-
-	header, #content, footer, #subheader, #booking {
-	padding-left: 20px;
-	padding-right: 20px;
-	}
-
-	header, #mainmenu-container {
-	border: none;
-	}
-
-	footer nav {
-	display: inline-block;
-	}
-
-	.blog-list li {
-	width: 100%;
-	}
-
-	.bloglist-small {
-	float: left;
-	}
-
-	.custom-col-3 {
-	display: block;
-	}
-
-	.custom-col-3 .left-col,
-	.custom-col-3 .mid-col {
-	width: 50%;
-	background: #f2f2f2;
-	}
-
-	.custom-col-3 .right-col {
-	display: block;
-	text-align: center;
-	padding: 40px 0 20px 0;
-	}
-
-	#section-text-1 img {
-	width: 100%;
-	}
-
-	#subheader {
-	padding-bottom: 0;
-	}
-
-	.crumb {
-	display: none;
-	}
-
-	header .social {
-	width: 100%;
-	text-align: center;
-	margin: 40px 0 40px 0;
-	}
-	
-	#section-track{
-		display:none;
-	}
-
-	.one-fourth, .three-fourth {
-	width: 100% !important;
-	display: block;
-	float: none;
-	}
-
-	.one-fourth .title-area, .three-fourth .title-area {
-	padding: 20px 0 20px 0;
-	}
-	
-	#menu-btn {
-    display:block
-	}
-	
-	#mainmenu-container{
-	display:block;	
-	}
-	
-	#mainmenu {
-	display:none;
-	left:0;
-    float:none;
-    z-index:200;
-    width:100%;
-    margin:0;
-    padding:0 20px 0 20px;
-	}
-	
-	#mainmenu > li{
-	font-size:16px;
-	margin-bottom:0;
-	}
-	
-
-	#mainmenu li {
-		text-align:left;
-		border-bottom:solid 1px #ddd;
-	}
-	
-	#mainmenu li li{
-		padding-left:30px;
-	}
-	
-	#mainmenu li a:hover{
-		background:none !important;
-	}
-	#mainmenu li:hover{
-		background:#eee;
-	}
-
-
-	#mainmenu li ul {
-		display:block;
-		position:inherit;
-		margin:0;
-		width:100%
-	}
-
-	#mainmenu li li{
-	background:#fff;
-	}
-
-	#mainmenu li {
-		border-bottom:solid 1px #eee;
-		margin:0;
-		width:100%;
-		display:block;
-		letter-spacing:3px
-	}
-
-	#mainmenu li:last-child {
-		margin-bottom:30px
-	}
-	
-	#mainmenu > li li:first-child {
-		border-top:solid 1px #eee;
-	}
-
-	#mainmenu li ul {
-		border-top:solid 1px #333;
-		border:none;
-		margin-top:-15px;
-		top: 0px;
-	}
-
-	#mainmenu li ul a {
-		width:100%;
-		background:none;
-		border:none
-	}
-
-
-	#mainmenu li ul li a {
-		display:block
-	}
-
-	#mainmenu li ul li:last-child {
-		border-bottom:none;
-		margin:0
-	}
-
-	#mainmenu li ul li:last-child a {
-		border-bottom:none
-	}
-
-	#mainmenu li a {
-		color:#555!important;
-		letter-spacing:0;
-	
-	}
-	
-	.timeline.custom-tl > li > .timeline-panel {
-	width:50%;
-	}
-	
-	header .search,
-	header .social
-	{display:none;}
-	
-	
-	#subheader .overlay{background-color:none;}
-	
-	.cta-form input[type=text] {
-		width: 60%;
-	}
-
-	.cta-form input[type=submit] {
-		border-radius: 0 10px 10px 0;
-		background: #D03232;
-		width: 40%;
-	}	
-	
-}
-
 .color-line {
     background: #f7f9fa;
     height: 6px;
@@ -4680,53 +4366,296 @@ background: url(/assets/loader.gif) center no-repeat #fff;
 	padding-left: 15px;	
 }
 
+.products-main {
+	display: inline-block;
+	margin-left: 0px;
+	padding-left: 15px;	
+	margin: 0px;	
+}
+
 .callout-text {
 	text-align: center;
 }
 
-/* -----START Dropdown Apps menu  */
 
-.dropdown-menu.hdropdown {
-  padding: 0;
-  z-index: 1060;
-}
-.dropdown-menu.hdropdown .title {
-  padding: 12px 12px;
-  text-align: center;
-  border-bottom: 1px solid #e4e5e7;
-}
-.dropdown-menu.hdropdown li {
-  padding: 6px 12px;
-  text-align: left;
-  background: #fafbfc;
-  border-bottom: 1px solid #e4e5e7;
-}
-.dropdown-menu.filedropdown li {
-  padding: 6px 6px;
-  text-align: left;
-  background: #fafbfc;
-  border-bottom: 1px solid #e4e5e7;
-}
-.dropdown-menu.filedropdown li i {
-  margin-right: 10px;
 
-  .dropdown-menu {
-  font-size: 13px;
-  border-radius: 3px;
-}
-.dropdown-example {
-  display: inline-block;
-  margin: 0px 10px 10px 10px;
-}
-.dropdown-example .dropdown-menu {
-  position: static;
-  display: block;
-}
-.pagination-example .pagination {
-  margin: 0 0 10px 0;
+#login-block {
+	text-align: center;
+	margin-top: -10px;
+	color: #71A3F7;
+	font-size: 1.0em;
+	border-bottom: 7px solid #0D47A1;
+	border-right: 1px solid #71A3F7;
+	height: 70px;
+	background-color: white;
 }
 
-/*------ END Dropdown Apps menu*/
+#talent-block {
+	text-align: center;
+	margin-top: -10px;
+	color: #71A3F7;
+	font-size: 1.4em;
+	border-bottom: 7px solid #71A3F7;
+	height: 70px;
+	background-color: white;
+}
+
+#gri-block {
+	text-align: center;
+	margin-top: -10px;
+	color: #71A3F7;
+	font-size: 1.4em;
+	border-bottom: 7px solid #5CB85C;
+	height: 70px;
+	background-color: white;
+}
+
+#dash-block {
+	text-align: center;
+	margin-top: -10px;
+	color: #71A3F7;
+	font-size: 1.4em;
+	border-bottom: 7px solid #FAB300;
+	height: 70px;
+	background-color: white;
+}
+
+
+.apps > ul {
+	display: inline-block;
+	list-style: none;
+}
+
+.talent-app, .main-app {
+	padding-top: 30px;
+	text-align: center;
+
+}
+
+ul > #app-name > a {
+	color: #737373;
+}
+
+.sub-head {
+	width: 100%;
+	display: inline-block;
+	height: 50px;
+	background-color: #0D47A1;
+	text-align: center;
+	border: none;
+	margin: 0 auto;
+
+}
+
+
+
+
+#sub-checkout {
+	color: #737373;
+	font-size: 0.9em;
+}
+
+.mysmile {
+	text-align: center;
+	font-size: 100px;
+	color: white;
+}
+
+
+.index-input {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.index-section {
+	padding-top: 100px;
+	height: 706px;
+	background-color: #3B3B3B;
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 250px;
+    width: 0;
+    height: 700px;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #3B3B3B;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -200px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(255,255,255, 0.1);
+
+
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 300;
+	color: white;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 200px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+.box-1 {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	width: 200px;
+	height: 120px;
+
+	
+}
+
+.box-1:hover {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	background-color: #4285F4;
+	width: 200px;
+	height: 120px;
+	
+}
+
+.box-2 {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	width: 250px;
+	height: 90px;
+	background-color: #EFF2F5;
+
+	
+}
+
+
+#apps-icon {
+	margin-left: 27px;
+	margin-top: 35px;
+}
+
+
+// Rules for sizing the icon.
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+// Rules for using icons as black on a light background.
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+// Rules for using icons as white on a dark background.
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.white { color: #FFFFFF; }
 
 
 

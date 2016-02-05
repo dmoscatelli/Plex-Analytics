@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery.min
@@ -29,8 +30,23 @@
 //= require jquery.scrollto
 //= require custom
 //= require gri_items.coffee
+//= require cube
+//= require smileys
 
 
+var mywindow = $(window);
+var mypos = mywindow.scrollTop();
+mywindow.scroll(function() {
+    if(mywindow.scrollTop() > mypos)
+    {
+        $('.sidebar-nav').fadeOut();  
+    }
+    else
+    {
+        $('.sidebar-nav').fadeIn();
+    }
+    mypos = mywindow.scrollTop();
+ });
 
 
 

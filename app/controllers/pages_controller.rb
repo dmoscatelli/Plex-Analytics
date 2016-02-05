@@ -65,6 +65,9 @@ class PagesController < ApplicationController
 	def start
 	end 
 
+	def plex_rubik
+	end 
+
 
 
 	

@@ -13,7 +13,7 @@
 		<p><%= link_to "Sign up", root_path %> to get started</p>
 		<br>
 
-
+	
 			<%= form_tag search_gri_items_path, method: :get, role: "search" do %>
 			<%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search GRI Items", :autofocus => true %>
 			<%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>

@@ -29,4 +29,5 @@ Rails.application.routes.draw do
    get '/research', :to => 'pages#research'
    get '/industries', :to => 'pages#industries'
    get '/participants', :to => 'pages#participants'
+   get '/plex-rubik', :to => 'pages#plex_rubik'
 end
