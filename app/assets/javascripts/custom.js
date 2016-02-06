@@ -9,36 +9,58 @@ jQuery(document).ready(function () {
         };
 
 
-        // ---START for apps show and hide functions
+        // ---START for settings show and hide functions
 
     
             var over = false;
-            $('.apps').hover(function() {
+            $('.settings-panel').hover(function() {
               over = true;
             },
             function () {
               over = false;
             });
 
-          $('.app-show').click( function(event){
+          $('#settings-menu').click( function(event){
                 event.stopPropagation();
-            $('.apps').toggle();
+            $('.settings-panel').toggle();
             });
 
             $(document).click( function(){
                if (!over) { 
-                $('.apps').hide();
+                $('.settings-panel').hide();
                 }
             });
-        
- 
-       
-        // --END for apps show and hide functions
 
+            $('#settings-light').click( function(event){
+            $('body').css({'background-color' : 'white'});
+            $('header').css({'background-color' : 'white'});
+            $('.index-section').css({'background-color' : 'white'});
+            $('#sidebar-wrapper').css({'background-color' : '#4285F4'});
+            $('.type-wrap.title.big').css({'color' : '#3B3B3B'});
+            $('#mainmenu a').css({'color' : '#3B3B3B'});
+            $('.settings-panel').css({'background-color' : '#4285F4'});
+            $('#gri_search').css({'background-color' : '#FFFFFF'});
+            $('#gri_search').css({'color' : '#3B3B3B'});
+            $('#gri_search').css({'border' : '1px solid #4285F4'});
+            $('#gri_search').css({'border' : '1px solid #4285F4'});
+            });
         
+        // --END for settings show and hide functions
+
+
+        // -- For search app 
+        $('#search-icon').click( function(event){
+             $('#gri_search').show();
+        });
+
+        // -- For the smile plugin :)
         $(".mysmile").smilify();
+        //-- END for smile pugin :(
 
 
+        //-- For Settings panel
+
+        
 
              
    

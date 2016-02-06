@@ -4,13 +4,13 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <li class="sidebar-brand">    
-                <%= link_to (image_tag "goplex.png"), root_path, class: "logo-1" %>
-                        <!-- logo close -->
+                     
                 </li>
+               
                 <li>Apps</li>
                 <li>
                     <div class="box-1">
-                     <i class="material-icons md-48 white" id="apps-icon">desktop_windows</i>
+                     <i class="material-icons md-48 white" id="search-icon">search</i>
                     </div>
                 </li>
                 <li>
@@ -20,7 +20,8 @@
                 </li>
                 <li>
                     <div class="box-1">
-                        <i class="material-icons md-48 white" id="apps-icon">search</i>
+                       
+                         <i class="material-icons md-48 white" id="apps-icon">desktop_windows</i>
                     </div>
                 </li>
                 <li>
@@ -28,26 +29,21 @@
                         <i class="material-icons md-48 white" id="apps-icon">perm_contact_calendar</i>
                     </div>
                 </li>
+
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
-
-
-
-
 
     <div class="container">
            <div class="index-section">
                     <div class="col-md-10 pull-right" >
                         <%= form_tag search_gri_items_path, method: :get, role: "search" do %>
-                        <%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search GRI Items",  :autofocus => true %>
+                        <%= text_field_tag :search, params[:search], class: "form-control wow slideInLeft", id: "gri_search", :placeholder => "Search GRI Items",  :autofocus => true %>
                         <%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>
                         <% end %>       
+                        <br>
+                        <br>
                         
-                        <br>
-                        <br>
-                        <%= image_tag "goplex_color.png" %>
                         <div class="type-wrap title big">
                             <div class="typed-strings">
                                 <p>Data Analytics at <span id="scale">Scale</span></p>
@@ -56,30 +52,44 @@
                             </div>
                             <span class="typed"></span>
                         </div> 
-                       
-                        <div class="col-md-6">
-                      
+                       <div class="row">  
+                        <div class="col-md-3" id="video-1">
+                            <i class="material-icons md-48" id="plus-me">&#xE148;</i>
                         </div>
-						<div class="divider-single"></div>
-                             
+                         <div class="col-md-3" id="video-1">
+                    
+                        </div>
                 </div> <!-- index-section -->
-
-                </div>
-
-            </div> <!-- container -->
+            </div>
+       </div>
+    </div> <!-- container -->
             
-
-           
-
-
-
-
-
-
-
+     <div class="products-index">
+                    
+                </div>
+        
             <!-- section close -->
 
             <div class="clearfix"></div>
+
+         <!-- FEATURES -->
+        <section id="features" class="gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div id="features-tabs" class="features-tabs">
+                        
+                        <!-- FEATURES TABS -->
+                        <ul class='tabs'>
+                            <li class='tab col-md-4'><a href="#features-tab1"><span class="triangle"><span class="inner-triangle"></span></span>Desktop Version</a></li>
+                            <li class='tab col-md-4'><a href="#features-tab2"><span class="triangle"><span class="inner-triangle"></span></span>Mobile Version</a></li>
+                            <li class='tab col-md-4'><a href="#features-tab3"><span class="triangle"><span class="inner-triangle"></span></span>Tablet Version</a></li>
+                        </ul>
+                        <!-- END FEATURES TABS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END FEATURES <--></-->
 	
 			<!-- section begin -->
             <section id="components" class="bg-light">

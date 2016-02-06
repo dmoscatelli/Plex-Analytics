@@ -39,14 +39,19 @@
                                 <li><%= link_to "About Plex", about_path %></li>
                                 <li><a href="track.html">Participants</a></li>
                                 <li><%= link_to "Contact", contact_path %></li>
-                                <li class="signin"><%= link_to "Sign in", root_path %></li>
+                                <li>
+                                        <i class="material-icons white" id="settings-menu">settings</i>
+                                    <div class="settings-panel">
+                                         <i class="material-icons white" id="settings-light">lightbulb_outline</i>
+                                    </div>
+                                </li> 
                             </ul>  
                         </nav>
                         <!-- mainmenu close -->
 
                         <!-- social icons -->
                         <div class="social">
-
+                           
                             <%= link_to "Sign in", "#", class: "btn-custom-log" %>
                            
                             <!--<a href="#"><i class="fa fa-twitter"></i></a>

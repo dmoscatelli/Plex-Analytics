@@ -110,11 +110,10 @@ HEADER
 	}
 
 	header .social {
-	margin-top: 30px;
+	margin-top: 25px;
 	display: inline-block;
 	float: right;
 	}
-
 
 	header .social a {
 	color: white;
@@ -1227,6 +1226,7 @@ ELEMENTS
 	}
 
 	#gri_search {
+		display: none;
 		font-family: 'Open Sans';
 		margin-bottom: 15px;
 		padding-top: 23px;
@@ -4494,14 +4494,14 @@ ul > #app-name > a {
 }
 
 #sidebar-wrapper {
-    z-index: 1000;
+  
     position: absolute;
     left: 250px;
-    width: 0;
-    height: 700px;
+    width: 0px;
+    height: 706px;
     margin-left: -250px;
     overflow-y: auto;
-    background: #3B3B3B;
+    background: rgba(59, 59, 59, 1);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -4565,7 +4565,7 @@ ul > #app-name > a {
 .sidebar-nav > .sidebar-brand {
     height: 65px;
     font-size: 18px;
-    line-height: 60px;
+    line-height: 30px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -4624,6 +4624,11 @@ ul > #app-name > a {
 	
 }
 
+.box-1 > li {
+	display: inline-block;
+	margin-top: 0px;
+}
+
 .box-2 {
 	margin-left: 20px;
 	margin-bottom: 15px;
@@ -4634,11 +4639,100 @@ ul > #app-name > a {
 	
 }
 
+.active-box {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	background-color: #4285F4;
+	width: 200px;
+	height: 120px;
+	
+}
+
 
 #apps-icon {
 	margin-left: 27px;
 	margin-top: 35px;
 }
+
+#search-icon {
+	margin-left: 27px;
+	margin-top: 35px;
+	border-bottom: solid 4px #4285F4;
+}
+
+#video-1 {
+	margin-top: 55px;
+	margin-left: 25px;
+	width: 270px;
+	height: 200px;
+	border-radius: 2px;
+	text-align: center;
+	padding-top: 20px;
+	background-color: #4285F4;
+	color: white;
+}
+
+#video-2 {
+	margin-top: 55px;
+	margin-left: 25px;
+	width: 270px;
+	height: 90px;
+	border-radius: 2px;
+	text-align: center;
+	padding-top: 20px;
+	background-color: #4285F4;
+}
+
+#video-3 {
+	margin-top: 15px;
+	margin-left: 25px;
+	width: 270px;
+	height: 90px;
+	border-radius: 2px;
+	text-align: center;
+	padding-top: 20px;
+	background-color: #4285F4;
+}
+
+
+
+
+.products-index {
+	width: 100%;
+	background-color: #4285F4;
+	z-index: 1000;
+	height: 200px;
+
+}
+
+
+
+#settings-menu {
+	margin-top: 10px;
+}
+
+#settings-menu:hover {
+	color: #4285F4;
+}
+
+ .settings-panel {
+ 	display: none;
+	width: 100px;
+	height: 200px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: #3B3B3B;
+	z-index: 1000;
+	text-align: center;
+	padding-top: 3px;
+}
+
+
+
+.settings-line > li {
+	display: inline-block;
+}
+
 
 
 // Rules for sizing the icon.
