@@ -7,7 +7,7 @@ class GriItemsController < ApplicationController
 
 	def search
 		if params[:search].present?
-			@gri_items = GriItem.search(params[:search])
+			@gri_items = GriItem.search(params[:search], suggest: true)
 		else 
 			@gri_items = GriItem.all
 		end 

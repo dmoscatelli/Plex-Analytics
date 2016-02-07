@@ -39,7 +39,7 @@ var mypos = mywindow.scrollTop();
 mywindow.scroll(function() {
     if(mywindow.scrollTop() > mypos)
     {
-        $('.sidebar-nav').fadeOut();  
+        /*$('.sidebar-nav').fadeOut(); */
     }
     else
     {

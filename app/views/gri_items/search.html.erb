@@ -20,6 +20,9 @@
 				<%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>
 			<% end %>		 
 			<br>
+			<% if @gri_items.suggestions.any? %>
+                <p>Did you mean: <%= @gri_items.suggestions.first %> </p>
+            <% end %>  
 		<!-- End search field -->
 
  				<div class="col-md-3">

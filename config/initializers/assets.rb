@@ -20,6 +20,7 @@ Rails.application.config.assets.precompile += %w( hero-icons.png )
 Rails.application.config.assets.precompile += %w( collaboration.png )
 Rails.application.config.assets.precompile += %w( goplex_color.png )
 Rails.application.config.assets.precompile += %w( goplex_color_2.png )
+Rails.application.config.assets.precompile += %w( gx.png )
 
 
 

@@ -49,17 +49,26 @@ jQuery(document).ready(function () {
 
 
         // -- For search app 
-        $('#search-icon').click( function(event){
-             $('#gri_search').show();
+   
+
+        $( "#search-icon" ).on( "click", function() {
+          $('#gri_search').toggle();
         });
+
 
         // -- For the smile plugin :)
         $(".mysmile").smilify();
         //-- END for smile pugin :(
 
 
-        //-- For Settings panel
+        //-- For blue box panel toggles 
+        $( "#video-1" ).on( "click", function() {
+          $(this).toggleClass( "active" );
+        });
 
+        $( "#video-2" ).on( "click", function() {
+          $(this).toggleClass( "active" );
+        });
         
 
              
@@ -88,12 +97,6 @@ jQuery(document).ready(function () {
 
             });
             // Search change color END
-
-            //For hiding sidebar BEGIN
-          
-
-            
-            //For hiding sidebar END
 
 
     // hide preloader
