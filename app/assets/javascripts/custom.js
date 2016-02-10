@@ -53,6 +53,7 @@ jQuery(document).ready(function () {
 
         $( "#search-icon" ).on( "click", function() {
           $('#gri_search').toggle();
+          $('#gri_search').focus();
         });
 
 
@@ -101,14 +102,22 @@ jQuery(document).ready(function () {
 
     // hide preloader & Blue box loader 
     jQuery('#preloader').delay(500).fadeOut(500);
-    jQuery('#blue-loader').delay(6000).fadeOut(500);
-    jQuery('#blue-loader-2').delay(6100).fadeOut(500);
+    jQuery('#blue-loader').delay(6000).fadeOut(200);
+    jQuery('#blue-loader-2').delay(6100).fadeOut(200);
     // END hide preadloaders
 
     // Video blue box's, to show content pragmatically
     jQuery('.stats-bar-1').delay(6800).fadeIn(500);
+    jQuery('.table-responsive').delay(6800).fadeIn(500);
 
     $("#video-1")
+    .delay(6100)
+    .queue(function() {
+        $(this).css("background-color","#4E4E4E").dequeue();
+    })
+    .fadeIn();
+
+    $("#video-2")
     .delay(6100)
     .queue(function() {
         $(this).css("background-color","#4E4E4E").dequeue();

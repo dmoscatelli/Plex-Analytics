@@ -22,7 +22,9 @@ Rails.application.config.assets.precompile += %w( goplex_color.png )
 Rails.application.config.assets.precompile += %w( goplex_color_2.png )
 Rails.application.config.assets.precompile += %w( gx.png )
 Rails.application.config.assets.precompile += %w( ring-load.gif )
-
+Rails.application.config.assets.precompile += %w( anglex.png )
+Rails.application.config.assets.precompile += %w( bird.png )
+Rails.application.config.assets.precompile += %w( goengine.png )
 
 
 # Add additional assets to the asset load path

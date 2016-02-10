@@ -5,6 +5,7 @@
             <ul class="sidebar-nav wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <li class="sidebar-brand">    
                   <!-- <%= image_tag 'gx.png', height: '30' %>-->
+                  <%= image_tag 'bird.png',height: '50', id:'bird' %>
                 </li>
                 <li>
                     <div class="box-1">
@@ -52,9 +53,9 @@
                         <div class="col-md-3" id="video-1">
                              
                          <div class="stats-bar-1">   
-                        <div class="stats-title pull-left">
-                            <h4>Participant Activity</h4>
-                        </div>
+                            <div class="stats-title pull-left">
+                                <h4>Participant Activity</h4>
+                            </div>
                         <div class="stats-icon pull-right">
                             <i class="pe-7s-share fa-4x"></i>
                         </div>
@@ -80,17 +81,55 @@
                                 </div>
                             </div>
                         </div> 
-                            <!--<i class="material-icons md-48">&#xE313;</i>-->
                             <%= image_tag 'ring-load.gif', id: 'blue-loader' %>
                         </div>
                          <div class="col-md-3" id="video-2">
-                            <!--<i class="material-icons md-48">&#xE313;</i>-->
                              <%= image_tag 'ring-load.gif', id: 'blue-loader-2' %>
+                         <div class="table-responsive">
+                            <div class="stats-title pull-left">
+                            <h4>Apps</h4>
+                        </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span><i class="material-icons white" >search</i></span>
+                                    </td>
+                                    <td>
+                                        <span>Company Search</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <i class="material-icons white">mode_comment</i>
+                                    </td>
+                                    <td>
+                                        <span>Talent Feedback</span>
+                                    </td>
+                       
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="material-icons white">desktop_windows</i>
+                                    </td>
+                                    <td>
+                                        <span>Dashboard</span>
+                                    </td>
+                              
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+
+                        <div class="col-md-3" id="video-3">
+                            <a class="btn-custom-light" href="#">Learn More</a>
+                             <a class="btn-custom" href="#">Get Started</a>
                         </div>
                     </div> <!-- index-section -->
                  <div class="row">
                     <div class="col-md-3 pull-right" id="go-plex">
-                       <%= image_tag 'gx.png', height: '50', id: 'go-plex-logo' %> 
+                       <%= image_tag 'anglex.png', height: '50', id: 'go-plex-logo' %> 
                     </div>
                 </div>
             </div>
