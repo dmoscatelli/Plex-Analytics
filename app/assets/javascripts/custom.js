@@ -94,7 +94,7 @@ jQuery(document).ready(function () {
             $('#gri_search').blur(
             function(){
                 $(this).css({'background-color' : '#5D5D5D'});
-                 $('#gri_search').attr('placeholder', 'Search GRI Items');
+                 $('#gri_search').attr('placeholder', 'Search Public Companies, or GRI Items');
 
             });
             // Search change color END

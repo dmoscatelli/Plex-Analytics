@@ -30,6 +30,7 @@
 //= require jquery.scrollto
 //= require custom
 //= require items.coffee
+//= require gri_items.coffee
 //= require cube
 //= require smileys
 //= require dataTables/jquery.dataTables
@@ -72,11 +73,13 @@ mywindow.scroll(function() {
             $('.display-text').css({'box-shadow' : '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)'});
             $('#value').text($("#financial tbody tr:visible:first td:last").text());
             $('#watermark').text($("#financial tbody tr:visible:first td:first").text());
+            $('.display-value').css({'box-shadow' : '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)'});
              if (!this.value) {
                 $('.display-text').css({'box-shadow' : 'none'});
+                $('.display-value').css({'box-shadow' : 'none'});
                 $('#value').text("");
                 $('#watermark').text("");
-            }
+                }
         });
     });
 

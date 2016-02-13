@@ -35,7 +35,7 @@
            <div class="index-section">
                     <div class="col-md-10 pull-right" >
                         <%= form_tag search_items_path, method: :get, role: "search" do %>
-                        <%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search GRI Items",  :autofocus => true %>
+                        <%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search Public Companies, or GRI Items",  :autofocus => true %>
                         <%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>
                         <% end %>     
                         <br>

@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $('#gri_search').typeahead
+  $('#gri_search_page').typeahead
     name: "search"
     remote: "/items/autocomplete?query=%QUERY"
 

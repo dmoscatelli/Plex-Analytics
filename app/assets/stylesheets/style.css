@@ -1225,6 +1225,7 @@ ELEMENTS
 
 	#gri_search {
 		display: none;
+		margin-top: 10px;
 		font-family: 'Open Sans';
 		padding-top: 23px;
 		padding-bottom: 23px;
@@ -2693,7 +2694,7 @@ letter-spacing: 1px;
 /* link and Login 
 /*------------------------------ */
 a {
-color: #D03232;
+color: #4285F4;
 text-decoration: none;
 outline: none;
 }
@@ -4836,7 +4837,8 @@ ul > #app-name > a {
 
 
 #search-fs {
-	width: 50%;
+	width: 60%;
+	height: 40px;
 	margin-bottom: 20px;
 }
 
@@ -4855,13 +4857,40 @@ ul > #app-name > a {
 }
 
 
-
 .display-text {
 	padding: 40px;
 	font-size: 1.5em;
 	height: 100px;
 	margin-bottom: 20px;
   	transition: all 0.2s ease-in-out;
+}
+
+.display-value {
+	padding: 40px;
+	font-size: 1.5em;
+	height: 100px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+  	transition: all 0.2s ease-in-out;
+}
+
+#comp-meta {
+	font-size: 0.8em;
+	color: #4E4E4E;
+}
+
+#comp-meta th {
+	font-weight: 400;
+}
+
+#comp-details {
+	font-size: 2em;
+}
+
+#comp-details tr > td {
+	padding-top: 5px;
+	padding-bottom: 15px;
+	padding-right: 25px;
 }
 
 
