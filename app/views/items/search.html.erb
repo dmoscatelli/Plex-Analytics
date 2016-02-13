@@ -1,0 +1,153 @@
+<!-- subheader begin -->
+        <section class="search no-bottom">
+
+        </section>
+<!-- subheader close -->
+
+<!-- content begin -->
+<div id="content">
+	<div class="container">
+
+		<!-- Begin search field here -->
+			<%= form_tag search_items_path, method: :get, role: "search" do %>
+				<%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search GRI Items", :autofocus => true %>
+				<%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>
+			<% end %>		 
+			<br>
+			<% if @gri_items.suggestions.any? %>
+                <p>Did you mean: <%= @gri_items.suggestions.first %> </p>
+            <% end %>  
+		<!-- End search field -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 display-text">
+					<p id='display'></p>
+					<p id='watermark'></p>
+				</div>
+				<div class="col-md-3" id='display-value'>
+					<p id="value"></p>
+				</div>
+			</div>
+
+			<input type="text" id="search-fs" class="form-control" placeholder="Type to filter by finanical statement line..."  />
+			 <ul class="nav nav-tabs nav-justified">
+		        <li class="nav active"><a href="#A" data-toggle="tab">Balance Sheet</a></li>
+		        <li class="nav"><a href="#B" data-toggle="tab">Income Statement</a></li>
+		        <li class="nav"><a href="#C" data-toggle="tab">Cash Flow Statement</a></li>
+		    </ul>
+			 <div class="tab-content">
+		        <div class="tab-pane fade in active" id="A">
+					<table  class="table table-hover" cellspacing="0" width="100%" id="financial">
+					<thead>
+						<th>Financial Statement Line</th>
+						<th>Amount</th>
+					</thead>
+					<tbody>	
+						<% @company.each do |company| %>
+							<tr>
+								<td><%= company.name %></td>
+								<td><%= company.ticker %></td>
+							</tr>
+						<% end %>
+						<% @BS['result']['rows'].each do |row| %>
+							<% row['values'].each do |values| %>
+								<tr>
+									<td><%= BS_convert(values['field'].underscore.humanize) %></td>
+									<td><%= values_convert(number_with_delimiter(values['value'])) %></td>
+								</tr>
+							<% end %>
+						<% end %>
+					</tbody>
+					</table>
+		        </div>
+		        <div class="tab-pane fade" id="B">
+		        	<table class="table table-striped table-bordered financialB" cellspacing="0" width="100%" id="financial">
+			        	<thead>
+							<th>Financial Statement Line</th>
+							<th>Amount</th>
+						</thead>
+						<tbody>
+						<% @company.each do |company| %>
+							<tr>
+								<td><%= company.name %></td>
+								<td><%= company.ticker %></td>
+							</tr>
+						<% end %>
+						<% @IS['result']['rows'].each do |row| %>
+							<% row['values'].each do |values| %>
+								<tr>
+									<td><%= values['field'].underscore.humanize %></td>
+									<td><%= values_convert(number_with_delimiter(values['value']))%></td>
+								</tr>
+							<% end %>
+						<% end %>
+						</tbody>
+					</table>
+		        </div>
+		        <div class="tab-pane fade" id="C">
+		        	<table class="table table-striped table-bordered financialC" cellspacing="0" width="100%" id="financial">
+		        		<thead>
+							<th>Financial Statement Line</th>
+							<th>Amount</th>
+						</thead>
+						<tbody>
+						<% @company.each do |company| %>
+							<tr>
+								<td><%= company.name %></td>
+								<td><%= company.ticker %></td>
+							</tr>
+						<% end %>
+						<% @CF['result']['rows'].each do |row| %>
+							<% row['values'].each do |values| %>
+								<tr>
+									<td><%= values['field'].underscore.humanize %></td>
+									<td><%= values_convert(number_with_delimiter(values['value']))%></td>
+								</tr>
+							<% end %>
+						<% end %>
+						</tbody>
+					</table>
+		        </div>
+	    	</div>
+    	</div>
+
+ 				<!--<div class="col-md-3">
+ 					<div class="widget">
+                            <ul class="side-nav">
+                                <li class="active"><a href="about.html">Strategy</a></li>
+                                <li><a href="people.html">Profile</a></li>
+                                <li><a href="history.html">Economic</a></li>
+                                <li><a href="event.html">Social</a></li>
+                                <li><a href="testimonial.html">Enviornmental</a></li>
+                            </ul>
+                        </div>
+                      </div>-->
+
+        <!-- Begin index loop -->              
+
+		<div class="col-md-9">
+			
+		
+
+					<!--< @results['result']['rows'][0]['values'][0]['field']
+					 @results['result']['rows'][0]['values'][0]['value'] 
+					  @results['result']['rows'][0]['values'][1]['field'] 
+					  @results['result']['rows'][0]['values'][1]['value'] -->
+
+
+
+				<% @gri_items.each do |gri| %>
+				<tr>
+					<td><%= gri.number %></td>
+					<td><%= gri.name %></td>
+					<td><%= gri.content %></td>
+				</tr>
+				<% end %>
+			</table>
+			
+		<!-- End index loop -->
+
+		</div>
+	</div>
+</div>

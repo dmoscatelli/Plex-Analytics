@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
 
-	resources :gri_items do 
-		collection do
-			get :autocomplete
-			get 'search'
-			
-		end 
-	end 
+	resources :gri_items
+   resources :company
 
-  	
+  	   resources :items do 
+      collection do
+         get :autocomplete
+         get 'search'
+         
+      end 
+   end 
+
 
    	root 'pages#index'
 

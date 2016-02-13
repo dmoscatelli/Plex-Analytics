@@ -19,6 +19,9 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 gem 'jquery-turbolinks'
 gem 'httparty', '~> 0.13.7'
+gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
+gem 'jquery-datatables-rails', '~> 3.3'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

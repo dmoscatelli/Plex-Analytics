@@ -1240,7 +1240,10 @@ ELEMENTS
 
 	.table {
 		font-family: arial;
+		font-size: 0.9em;
 	}
+
+	
 /* blockquote
 ------------------------------ */
 	blockquote {
@@ -4756,6 +4759,11 @@ ul > #app-name > a {
 	display: none;
 }
 
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+
 #video-3 {
 	margin-top: 55px;
 	margin-left: 25px;
@@ -4823,6 +4831,39 @@ ul > #app-name > a {
 .settings-line > li {
 	display: inline-block;
 }
+
+
+
+
+#search-fs {
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+#financial {
+	margin-top: 20px;
+}
+
+#watermark {
+	font-size: 1.0em;
+	color: #EFF2F5;
+}
+
+#display {
+	z-index: 1;
+	position: absolute;
+}
+
+
+
+.display-text {
+	padding: 40px;
+	font-size: 1.5em;
+	height: 100px;
+	margin-bottom: 20px;
+  	transition: all 0.2s ease-in-out;
+}
+
 
 
 

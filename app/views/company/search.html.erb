@@ -1,0 +1,57 @@
+<!-- subheader begin -->
+        <section class="search no-bottom">
+
+        </section>
+<!-- subheader close -->
+
+<!-- content begin -->
+<div id="content">
+	<div class="container">
+		<h4>Search GRI Items using the Plex Search Interface</h4>
+		<p>Our EDGAR® Online SEC API provides easy, programmatic access to data from ~19,000 public company filings with the Securities and Exchange Comission. The dataset includes balance sheets, income statements, cash flow plus valuation, profitability, leverage and liquidity ratios. Get the latest data as filings are announced and access 5 years of historic data. Access to the API endpoints and downloads of the data is restricted to kimono labs users with a free API key.</p>
+		<br>
+		<p><%= link_to "Sign up", root_path %> to get started</p>
+		<br>
+
+		<!-- Begin search field here -->
+
+			<%= form_tag search_gri_items_path, method: :get, role: "search" do %>
+				<%= text_field_tag :search, params[:search], class: "form-control", id: "gri_search", :placeholder => "Search GRI Items", :autofocus => true %>
+				<%= submit_tag "Search", name: nil, class: "btn btn-default", id: "search_button" %>
+			<% end %>		 
+			<br>
+			<% if @gri_items.suggestions.any? %>
+                <p>Did you mean: <%= @gri_items.suggestions.first %> </p>
+            <% end %>  
+		<!-- End search field -->
+
+ 				<div class="col-md-3">
+ 					<div class="widget">
+                            <ul class="side-nav">
+                                <li class="active"><a href="about.html">Strategy</a></li>
+                                <li><a href="people.html">Profile</a></li>
+                                <li><a href="history.html">Economic</a></li>
+                                <li><a href="event.html">Social</a></li>
+                                <li><a href="testimonial.html">Enviornmental</a></li>
+                            </ul>
+                        </div>
+                      </div>
+
+        <!-- Begin index loop -->              
+
+		<div class="col-md-9">
+			<table class="table">
+				<% @gri_items.each do |gri| %>
+				<tr>
+					<td><%= gri.number %></td>
+					<td><%= gri.name %></td>
+					<td><%= gri.content %></td>
+				</tr>
+				<% end %>
+			</table>
+
+		<!-- End index loop -->
+
+		</div>
+	</div>
+</div>
